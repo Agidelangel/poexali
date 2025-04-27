@@ -1,49 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Грузовые и пассажирские перевозки в Днепре</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <title>Грузовые и Пассажирские Перевозки в Днепре и области</title>
+  <meta name="description" content="Грузовые и пассажирские перевозки в Днепре и области. Надежно, быстро и с гарантией. Закажите переезд, доставка грузов, эвакуатор и другие услуги.">
+  <meta name="keywords" content="грузоперевозки Днепр, пассажирские перевозки Днепр, доставка грузов, эвакуатор Днепр, перевозка животных, квартирные переезды">
+
+  <!-- Open Graph для Facebook -->
+  <meta property="og:title" content="Грузовые и Пассажирские Перевозки в Днепре и области">
+  <meta property="og:description" content="Грузовые и пассажирские перевозки в Днепре. Закажите переезд, доставку, эвакуатор и другие услуги!">
+  <meta property="og:image" content="https://agidelangel.github.io/dostavka/og-image.jpg">
+  <meta property="og:url" content="https://agidelangel.github.io/dostavka/">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Грузовые и Пассажирские Перевозки в Днепре и области">
+  <meta name="twitter:description" content="Надежно, быстро и с гарантией. Закажите перевозку прямо сейчас!">
+  <meta name="twitter:image" content="https://agidelangel.github.io/dostavka/og-image.jpg">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Заголовок -->
-    <header>
-        <h1>Грузовые и пассажирские перевозки в Днепре и области</h1>
-        <p>Лучший сервис для ваших перевозок!</p>
-    </header>
 
-    <!-- Раздел услуг -->
-    <section class="services">
-        <div class="service-item">
-            <h3>Грузоперевозки</h3>
-            <p>Перевозим любые грузы по Днепру и области</p>
-            <a href="#">Подробнее</a>
+  <!-- Липкий header -->
+  <header>
+    <div class="container">
+      <div class="logo"><a href="#hero">Перевозки Днепр</a></div>
+      <nav>
+        <a href="#services">Услуги</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="phones">
+        <a href="tel:+380965387558">+38 096 538 75 58</a>
+        <a href="tel:+380953275120">+38 095 327 51 20</a>
+      </div>
+      <button class="callback-btn">Обратный звонок</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1>Грузовые и Пассажирские Перевозки в Днепре</h1>
+      <p>Быстро, надёжно и с гарантией. Любые виды перевозок: от квартирных и офисных переездов до доставки строительных материалов и эвакуатора.</p>
+      <a href="#contact" class="btn-primary">Заказать сейчас</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services">
+    <div class="container">
+      <h2>Наши Услуги</h2>
+      <div class="services-grid">
+        <div class="card">
+          <h3>Грузоперевозки</h3>
+          <p>Доставка любых грузов: мебель, стройматериалы, оборудование.</p>
+          <a href="tel:+380965387558" class="btn-secondary">Заказать</a>
         </div>
-        <div class="service-item">
-            <h3>Пассажирские перевозки</h3>
-            <p>Удобный транспорт для ваших поездок</p>
-            <a href="#">Подробнее</a>
+        <div class="card">
+          <h3>Пассажирские перевозки</h3>
+          <p>Комфортабельные поездки по городу и между городами.</p>
+          <a href="tel:+380953275120" class="btn-secondary">Заказать</a>
         </div>
-        <div class="service-item">
-            <h3>Дачные переезды</h3>
-            <p>Переезды на дачу без проблем и лишних забот</p>
-            <a href="#">Подробнее</a>
+        <div class="card">
+          <h3>Квартирные переезды</h3>
+          <p>Переезд «под ключ»: упаковка, погрузка, разгрузка.</p>
+          <a href="tel:+380965387558" class="btn-secondary">Заказать</a>
         </div>
-        <!-- Добавляй остальные услуги по аналогии -->
-    </section>
+        <div class="card">
+          <h3>Перевозка животных</h3>
+          <p>Специальные условия и забота о вашем питомце.</p>
+          <a href="tel:+380965387558" class="btn-secondary">Заказать</a>
+        </div>
+        <div class="card">
+          <h3>Эвакуатор</h3>
+          <p>Срочная эвакуация любых транспортных средств.</p>
+          <a href="tel:+380953275120" class="btn-secondary">Заказать</a>
+        </div>
+        <div class="card">
+          <h3>Вывоз мусора</h3>
+          <p>Утилизация строительных и бытовых отходов.</p>
+          <a href="tel:+380965387558" class="btn-secondary">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Контакты -->
-    <section class="contacts">
-        <h2>Контакты</h2>
-        <p>Звоните нам: <a href="tel:+380953275120">+380953275120</a></p>
-    </section>
+  <!-- О нас -->
+  <section id="about">
+    <div class="container">
+      <h2>О нас</h2>
+      <p>Мы — команда профессионалов с многолетним опытом.
+24/7 поддержка, собственный автопарк и высококвалифицированные водители и грузчики.</p>
+      <ul>
+        <li>Гибкая ценовая политика</li>
+        <li>Современные машины и оборудование</li>
+        <li>Соблюдение сроков</li>
+        <li>Гарантия сохранности груза</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Плавающая кнопка позвонить -->
-    <a href="tel:+380953275120" class="call-button">Позвонить</a>
+  <!-- Контакты -->
+  <section id="contact">
+    <div class="container">
+      <h2>Контакты</h2>
+      <form>
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Телефон" required>
+        <textarea placeholder="Сообщение"></textarea>
+        <button type="submit" class="btn-primary">Отправить</button>
+      </form>
+      <p>Или позвоните нам: <a href="tel:+380965387558">+38 096 538 75 58</a>, <a href="tel:+380953275120">+38 095 327 51 20</a></p>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Грузовые и пассажирские перевозки в Днепре. Все права защищены.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Все права защищены. Перевозки Днепр</p>
+    </div>
+  </footer>
+
 </body>
 </html>

@@ -1,80 +1,81 @@
-/* Общие стили */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+/* Базовые стили */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #f7f7f7; color: #333; }
 
+/* Контейнер */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  position: sticky; top: 0; z-index: 100;
+  background: #003366; color: #fff; padding: 15px 0;
+}
+header .container { display: flex; align-items: center; justify-content: space-between; }
+.logo a { color: #FFD700; font-size: 24px; text-decoration: none; }
+nav a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 16px; transition: color .3s; }
+nav a:hover { color: #FF6F00; }
+.phones a { color: #fff; margin: 0 8px; text-decoration: none; font-size: 14px; }
+.callback-btn {
+  background: #FF6F00; color: #fff; border: none; padding: 8px 16px;
+  border-radius: 20px; cursor: pointer; transition: background .3s;
+}
+.callback-btn:hover { background: #FFD700; color: #003366; }
+
+/* Hero */
+#hero { background: #fff url('hero-bg.jpg') center/cover no-repeat; padding: 80px 0; text-align: center; }
+#hero h1 { font-size: 36px; margin-bottom: 20px; }
+#hero p { font-size: 18px; margin-bottom: 30px; }
+
+/* Кнопки */
+.btn-primary {
+  background: #FF6F00; color: #fff; padding: 12px 30px;
+  border-radius: 30px; text-decoration: none; font-size: 18px; transition: background .3s;
+}
+.btn-primary:hover { background: #FFD700; color: #003366; }
+.btn-secondary {
+  display: block; margin: 15px auto 0; background: #003366;
+  color: #fff; padding: 8px 20px; border-radius: 20px; text-decoration: none; transition: background .3s;
+}
+.btn-secondary:hover { background: #FF6F00; }
+
+/* Секция услуг */
+#services { padding: 60px 0; }
+#services h2 { text-align: center; font-size: 30px; margin-bottom: 40px; }
+.services-grid {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff; padding: 20px; border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;
+}
+.card h3 { margin-bottom: 15px; font-size: 22px; color: #003366; }
+.card p { font-size: 16px; line-height: 1.4; }
+
+/* Секции «О нас» и «Контакты» */
+section { padding: 60px 0; background: #fff; margin-bottom: 20px; }
+section h2 { text-align: center; font-size: 30px; margin-bottom: 20px; }
+section p, section ul { max-width: 800px; margin: 0 auto 20px; font-size: 16px; }
+section ul { list-style: disc inside; }
+
+/* Форма */
+form {
+  max-width: 500px; margin: 0 auto; text-align: center;
+}
+form input, form textarea {
+  width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 36px;
+/* Footer */
+footer {
+  background: #003366; color: #fff; text-align: center; padding: 20px 0;
+  font-size: 14px;
 }
 
-p {
-    margin: 10px 0;
-}
-
-.services {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-
-.service-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-}
-
-.service-item h3 {
-    color: #4CAF50;
-}
-
-a {
-    text-decoration: none;
-    color: #4CAF50;
-}
-
-.contacts {
-    background-color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-.call-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #FF5733;
-    color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 24px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Мобильная адаптивность */
+/* Адаптивность */
 @media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-    }
-
-    .service-item {
-        width: 80%;
-        margin: 10px auto;
-    }
+  header .container { flex-direction: column; }
+  nav { margin: 10px 0; }
+  #hero h1 { font-size: 28px; }
+  #hero p { font-size: 16px; }
 }
