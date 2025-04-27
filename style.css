@@ -14,7 +14,7 @@ header .container { display: flex; align-items: center; justify-content: space-b
 .logo a { color: #FFD700; font-size: 24px; text-decoration: none; }
 nav a { color: #fff; margin: 0 15px; text-decoration: none; font-size: 16px; transition: color .3s; }
 nav a:hover { color: #FF6F00; }
-.phones a { color: #fff; margin: 0 8px; text-decoration: none; font-size: 14px; }
+.phones a { color: #fff; margin: 0 8px; text-decoration: none; font-size: 20px; }
 .callback-btn {
   background: #FF6F00; color: #fff; border: none; padding: 8px 16px;
   border-radius: 20px; cursor: pointer; transition: background .3s;
