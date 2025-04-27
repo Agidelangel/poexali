@@ -38,6 +38,19 @@ nav a:hover { color: #FF6F00; }
 }
 .btn-secondary:hover { background: #FF6F00; }
 
+/* Плавающая Кнопка */
+.call-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF5733;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* Секция услуг */
 #services { padding: 60px 0; }
 #services h2 { text-align: center; font-size: 30px; margin-bottom: 40px; }
